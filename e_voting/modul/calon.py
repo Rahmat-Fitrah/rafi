@@ -6,16 +6,16 @@ def tambah_calon():
         print("ID sudah terdaftar.")
         return
     namaCal = input("Masukan Nama Calon: ")
-    vimical = input("Masukan Nama visi misi: ")
+    vimiCal = input("Masukan Nama Visi Misi: ")
 
-    listCalon.append({"id":idCal, "Nama":namaCal, "visi":vimical, "jumlah_suara": 0})
-    print("Calon berhasil didaftar!")
+    listCalon.append({"id": idCal, "nama": namaCal, "visi": vimiCal, "jumlah_suara": 0})
+    print("Calon berhasil didafarkan!")
 
-    def get_data():
-        return listCalon
+def get_data():
+    return listCalon
 
-    def cari_calon(id):
-        for c in listCalon:
-            if p ['id'] == id:
-                return p
-        return None
+def cari_calon(id):
+    for c in listCalon:
+        if c['id'] == id:
+            return c
+    return None
